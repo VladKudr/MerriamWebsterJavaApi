@@ -15,9 +15,11 @@ class Definition {
     @XmlElement(name = "dt")
     List<DefiningText> definingText;
 
+    public List<PhrasalVerb> getPhrasalVerb() {
+        return phrasalVerb;
+    }
 
-
-
-
-
+    public List<DefiningText> getDefiningText() {
+        return definingText;
+    }
 }

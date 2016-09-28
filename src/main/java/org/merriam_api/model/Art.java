@@ -23,5 +23,21 @@ class Art{
     private static class ArtRef{
         @XmlAttribute(name = "id")
         String id;
+
+        public String getId() {
+            return id;
+        }
+    }
+
+    public String getArtDimension() {
+        return artDimension;
+    }
+
+    public ArtRef getArtRef() {
+        return artRef;
+    }
+
+    public String getArtCaption() {
+        return artCaption;
     }
 }

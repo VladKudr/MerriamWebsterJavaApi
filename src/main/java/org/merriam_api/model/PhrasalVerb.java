@@ -14,5 +14,11 @@ class PhrasalVerb {
     @XmlElement(name = "pvl")
     protected String phrasalVerbLabel;
 
+    public String getPhrasalVerbForm() {
+        return phrasalVerbForm;
+    }
 
+    public String getPhrasalVerbLabel() {
+        return phrasalVerbLabel;
+    }
 }

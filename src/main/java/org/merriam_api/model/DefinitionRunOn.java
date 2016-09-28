@@ -17,4 +17,15 @@ class DefinitionRunOn {
     @XmlElement(name="gram")
     List<SimpleType> gram;
 
+    public List<SimpleType> getDre() {
+        return dre;
+    }
+
+    public List<Definition> getDefinition() {
+        return definition;
+    }
+
+    public List<SimpleType> getGram() {
+        return gram;
+    }
 }

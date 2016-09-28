@@ -21,6 +21,14 @@ class DefiningText {
         return description;
     }
 
+    public List<SimpleType> getVerbalIllustration() {
+        return verbalIllustration;
+    }
+
+    public List<UsageNote> getUsageNote() {
+        return usageNote;
+    }
+
     public void setDescription(List<String> description) {
         this.description = description;
     }

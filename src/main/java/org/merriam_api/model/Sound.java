@@ -9,4 +9,8 @@ import javax.xml.bind.annotation.XmlElement;
 class Sound {
     @XmlElement(name = "wav")
     protected String wavName;
+
+    public String getWavName() {
+        return wavName;
+    }
 }
