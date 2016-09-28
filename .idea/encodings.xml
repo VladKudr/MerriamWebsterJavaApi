@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/httpservice/HttpUrlService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/Art.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/Definition.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/Entry.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/PhrasalVerb.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/SimpleWord.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/Sound.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/model/Word.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/service/WordService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/service/WordServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/merriam/service/XmlParser.java" charset="UTF-8" />
+  </component>
+</project>
