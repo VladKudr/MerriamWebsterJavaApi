@@ -27,7 +27,7 @@ The "MerriamService" class is a classic one way service class to obtain definiti
 
 ```` java
 
-        import org.merriam_api.MerriamService;
+        import org.merriam_api.service.MerriamService;
         import org.merriam_api.model.EntryList;
         public class App{
             public static void main (String [] args){

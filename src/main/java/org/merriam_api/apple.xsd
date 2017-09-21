@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="entry_list" type="entry_listType"/>
+  <xs:complexType name="droType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dre"/>
+      <xs:element type="dxType" name="dx" minOccurs="0"/>
+      <xs:element type="defType" name="def" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entryType">
+    <xs:sequence>
+      <xs:element type="hwType" name="hw"/>
+      <xs:element type="soundType" name="sound" minOccurs="0"/>
+      <xs:element name="pr" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ˈæpəl"/>
+            <xs:enumeration value="ˈæpəlˌtʃi:kt"/>
+            <xs:enumeration value="ˈbæd"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="altpr" minOccurs="0"/>
+      <xs:element name="fl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="noun"/>
+            <xs:enumeration value="adjective"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="inType" name="in" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="defType" name="def" minOccurs="0"/>
+      <xs:element type="droType" name="dro" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="uroType" name="uro" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="snoteType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="phrase">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bad apple"/>
+            <xs:enumeration value="rotten apple"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="viType" name="vi"/>
+      <xs:element type="xs:string" name="dxt" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="hwType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="highlight" use="optional"/>
+        <xs:attribute type="xs:string" name="hindex" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dtType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="wsgram"/>
+      <xs:element type="viType" name="vi"/>
+      <xs:element type="unType" name="un"/>
+      <xs:element name="dx">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element type="xs:string" name="dxt" maxOccurs="unbounded" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="snoteType" name="snote"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="viType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="it"/>
+      <xs:element name="phrase">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bad debt"/>
+            <xs:enumeration value="bad loan"/>
+            <xs:enumeration value="bad cholesterol"/>
+            <xs:enumeration value="bad guys"/>
+            <xs:enumeration value="feel bad"/>
+            <xs:enumeration value="gone bad"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dxType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dxt" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uroType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ure"/>
+      <xs:element type="xs:string" name="fl"/>
+      <xs:element type="xs:string" name="gram"/>
+      <xs:element type="utxtType" name="utxt"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unType" mixed="true">
+    <xs:sequence>
+      <xs:element name="it" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="for"/>
+            <xs:enumeration value="at"/>
+            <xs:enumeration value="about"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="viType" name="vi" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entry_listType">
+    <xs:sequence>
+      <xs:element type="entryType" name="entry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="version"/>
+  </xs:complexType>
+  <xs:complexType name="defType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="gram"/>
+      <xs:element name="sl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="informal"/>
+            <xs:enumeration value="US"/>
+            <xs:enumeration value="informal + disapproving"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="dtType" name="dt"/>
+      <xs:element name="sn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="1 a"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="sinType" name="sin"/>
+      <xs:element name="ssl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="chiefly US"/>
+            <xs:enumeration value="informal"/>
+            <xs:enumeration value="a"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="utxtType">
+    <xs:sequence>
+      <xs:element type="viType" name="vi" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="il" minOccurs="0"/>
+      <xs:element name="if">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ap*ples"/>
+            <xs:enumeration value="⁓ pies"/>
+            <xs:enumeration value="⁓ -ers"/>
+            <xs:enumeration value="⁓ apples"/>
+            <xs:enumeration value="worse"/>
+            <xs:enumeration value="worst"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="soundType" name="sound" minOccurs="0"/>
+      <xs:element name="pr" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ˈwɚs"/>
+            <xs:enumeration value="ˈwɚst"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sinType">
+    <xs:sequence>
+      <xs:element name="if">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bad*der"/>
+            <xs:enumeration value="bad*dest"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="soundType">
+    <xs:sequence>
+      <xs:element name="wav" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="apple001.wav"/>
+            <xs:enumeration value="bad00001.wav"/>
+            <xs:enumeration value="worse001.wav"/>
+            <xs:enumeration value="ill00002.wav"/>
+            <xs:enumeration value="worst001.wav"/>
+            <xs:enumeration value="ill00003.wav"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

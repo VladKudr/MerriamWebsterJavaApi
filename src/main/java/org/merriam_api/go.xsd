@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="entry_list" type="entry_listType"/>
+  <xs:complexType name="droType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dre"/>
+      <xs:element type="vrType" name="vr" minOccurs="0"/>
+      <xs:element type="xs:string" name="gram" minOccurs="0"/>
+      <xs:element type="defType" name="def" minOccurs="0"/>
+      <xs:element type="dxType" name="dx" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entryType">
+    <xs:sequence>
+      <xs:element type="hwType" name="hw"/>
+      <xs:element type="soundType" name="sound" minOccurs="0"/>
+      <xs:element name="pr" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ˈgoʊ"/>
+            <xs:enumeration value="ˈgowəˌhɛd"/>
+            <xs:enumeration value="ˈgowəˌraʊnd"/>
+            <xs:enumeration value="ˈgoʊbəˌtwi:n"/>
+            <xs:enumeration value="ˈgoʊˈgɛtɚ"/>
+            <xs:enumeration value="ˈgoʊˌgoʊ"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="altpr" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ˈgoʊ"/>
+            <xs:enumeration value="ˈgowəˌhɛd"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fl" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="verb"/>
+            <xs:enumeration value="noun"/>
+            <xs:enumeration value="adjective"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="inType" name="in" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="lb" minOccurs="0"/>
+      <xs:element type="defType" name="def" minOccurs="0"/>
+      <xs:element type="droType" name="dro" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="dxType" name="dx" minOccurs="0"/>
+      <xs:element type="cxType" name="cx" minOccurs="0"/>
+      <xs:element type="dxnlType" name="dxnl" minOccurs="0"/>
+      <xs:element type="uroType" name="uro" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="snoteType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="phrase">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="go and"/>
+            <xs:enumeration value="enough/plenty to go around"/>
+            <xs:enumeration value="there's no going back"/>
+            <xs:enumeration value="have something going for you"/>
+            <xs:enumeration value="going through your head/mind"/>
+            <xs:enumeration value="goes through"/>
+            <xs:enumeration value="is a go"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="it"/>
+      <xs:element type="viType" name="vi"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="hwType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="highlight" use="optional"/>
+        <xs:attribute type="xs:string" name="hindex" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dtType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="it">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="doing"/>
+            <xs:enumeration value="to"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="viType" name="vi"/>
+      <xs:element type="unType" name="un"/>
+      <xs:element type="dxType" name="dx"/>
+      <xs:element type="snoteType" name="snote"/>
+      <xs:element type="xs:string" name="wsgram"/>
+      <xs:element name="sx">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="belong"/>
+            <xs:enumeration value="steal"/>
+            <xs:enumeration value="go-round"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dxtType" mixed="true">
+    <xs:sequence>
+      <xs:element name="dxn" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5 (below)"/>
+            <xs:enumeration value="2 (below)"/>
+            <xs:enumeration value="(below)"/>
+            <xs:enumeration value="4b (above)"/>
+            <xs:enumeration value="2 (above)"/>
+            <xs:enumeration value="1 (above)"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="viType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="it" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="phrase" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dxType" mixed="true">
+    <xs:sequence>
+      <xs:element name="tag" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="get going"/>
+            <xs:enumeration value="keep going"/>
+            <xs:enumeration value="go to the bathroom"/>
+            <xs:enumeration value="go into effect"/>
+            <xs:enumeration value="going on"/>
+            <xs:enumeration value="go through the motions"/>
+            <xs:enumeration value="go with the territory"/>
+            <xs:enumeration value="go ahead"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="dxtType" name="dxt" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uroType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ure"/>
+      <xs:element type="soundType" name="sound"/>
+      <xs:element type="xs:string" name="pr"/>
+      <xs:element type="xs:string" name="fl"/>
+      <xs:element type="xs:string" name="lb"/>
+      <xs:element type="utxtType" name="utxt"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="phrasevType" mixed="true">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="pva"/>
+      <xs:element name="it">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="doing"/>
+            <xs:enumeration value="to"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="viType" name="vi"/>
+      <xs:element type="unType" name="un"/>
+      <xs:element type="dxType" name="dx"/>
+      <xs:element type="snoteType" name="snote"/>
+      <xs:element type="xs:string" name="wsgram"/>
+      <xs:element name="sx">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="belong"/>
+            <xs:enumeration value="steal"/>
+            <xs:enumeration value="go-round"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="pvl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="or"/>
+            <xs:enumeration value="go around (a place)"/>
+            <xs:enumeration value="go around (something or someone)"/>
+            <xs:enumeration value="go by (somewhere)"/>
+            <xs:enumeration value="go without (something)"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="unType" mixed="true">
+    <xs:sequence>
+      <xs:element name="it" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="to"/>
+            <xs:enumeration value="on"/>
+            <xs:enumeration value="-ing verb"/>
+            <xs:enumeration value="all"/>
+            <xs:enumeration value="with"/>
+            <xs:enumeration value="(be) gone into"/>
+            <xs:enumeration value="for"/>
+            <xs:enumeration value="over"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="phrase" minOccurs="0"/>
+      <xs:element type="viType" name="vi" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entry_listType">
+    <xs:sequence>
+      <xs:element type="entryType" name="entry" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="version"/>
+  </xs:complexType>
+  <xs:complexType name="defType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="sn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="1 a"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="sgram">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="no obj"/>
+            <xs:enumeration value="a"/>
+            <xs:enumeration value="count"/>
+            <xs:enumeration value="more go–ahead; most go–ahead"/>
+            <xs:enumeration value="Brit"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="dtType" name="dt"/>
+      <xs:element name="ssl">
+        <xs:complexType mixed="true">
+          <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element name="it">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="doing"/>
+                  <xs:enumeration value="to"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element type="viType" name="vi"/>
+            <xs:element type="unType" name="un"/>
+            <xs:element type="dxType" name="dx"/>
+            <xs:element type="snoteType" name="snote"/>
+            <xs:element type="xs:string" name="wsgram"/>
+            <xs:element name="sx">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="belong"/>
+                  <xs:enumeration value="steal"/>
+                  <xs:enumeration value="go-round"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="slb">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="always followed by an adverb or preposition"/>
+            <xs:enumeration value="no obj"/>
+            <xs:enumeration value="not used in progressive tenses"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="sl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Brit"/>
+            <xs:enumeration value="informal"/>
+            <xs:enumeration value="US"/>
+            <xs:enumeration value="chiefly US"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="phrasevType" name="phrasev"/>
+      <xs:element name="sd">
+        <xs:complexType mixed="true">
+          <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element name="it">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="doing"/>
+                  <xs:enumeration value="to"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element type="viType" name="vi"/>
+            <xs:element type="unType" name="un"/>
+            <xs:element type="dxType" name="dx"/>
+            <xs:element type="snoteType" name="snote"/>
+            <xs:element type="xs:string" name="wsgram"/>
+            <xs:element name="sx">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="belong"/>
+                  <xs:enumeration value="steal"/>
+                  <xs:enumeration value="go-round"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="gram"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="utxtType">
+    <xs:sequence>
+      <xs:element type="viType" name="vi"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vrType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="vl"/>
+      <xs:element type="xs:string" name="va"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dxnlType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="tag"/>
+      <xs:element type="xs:string" name="dxt"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="il" minOccurs="0"/>
+      <xs:element name="if">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="goes"/>
+            <xs:enumeration value="went"/>
+            <xs:enumeration value="gone"/>
+            <xs:enumeration value="go*ing"/>
+            <xs:enumeration value="go–arounds"/>
+            <xs:enumeration value="go–be*tweens"/>
+            <xs:enumeration value="go–get*ters"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="soundType" name="sound" minOccurs="0"/>
+      <xs:element name="pr" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ˈgoʊz"/>
+            <xs:enumeration value="ˈwɛnt"/>
+            <xs:enumeration value="ˈgɑ:n"/>
+            <xs:enumeration value="ˈgowɪŋ"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cxType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="cl"/>
+      <xs:element type="xs:string" name="ct"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="soundType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="wav" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
