@@ -7,7 +7,13 @@ import org.merriam_api.objects.SimpleWord;
 import java.util.List;
 
 public interface WordsDAO {
-    public void saveWord(ComplexWord complexWord);
+    public void saveComplexWord(ComplexWord complexWord);
 
-    public ComplexWord getWord(String infinitiveForm);
+    public ComplexWord getComplexWord(String infinitiveForm);
+
+    public PhrasalVerb getPhrasalVerb (String phrasalVerb);
+
+    public SimpleWord getSimpleWord (String infinitiveForm);
+
+
 }

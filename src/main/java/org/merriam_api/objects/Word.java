@@ -5,7 +5,17 @@ import java.util.Map;
 
 public abstract class Word {
     protected String id;
-    protected String transcription;
+
 
     protected Map<String, List<String>> definitionsAndExamples;
+
+    public String getId() {
+        return id;
+    }
+
+
+
+    public Map<String, List<String>> getDefinitionsAndExamples() {
+        return definitionsAndExamples;
+    }
 }

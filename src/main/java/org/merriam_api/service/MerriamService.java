@@ -65,24 +65,25 @@ public class MerriamService implements MerriamServiceInterface {
         return responseEntity.getBody();
     }
 
+
     public static void main(String[] args) {
 
         final String authUser = "myuser";
         final String authPassword = "secret";
 
 
-//        System.setProperty("http.proxyHost", "msk-proxy.ftc.ru");
-//        System.setProperty("http.proxyPort", "3128");
+        System.setProperty("http.proxyHost", "msk-proxy.ftc.ru");
+        System.setProperty("http.proxyPort", "3128");
 //        System.setProperty("http.proxyUser", authUser);
 //        System.setProperty("http.proxyPassword", authPassword);
         MerriamService merriamService = new MerriamService("4d0a2da0-791e-4616-986f-2b26da530f04");
 //        merriamService.explainTheWord("taken");
 
 
-        List<PhrasalVerb> phrasalVerbs = merriamService.getPhrasalVerbs("take", 10);
-        List<SimpleWord> simpleWords = merriamService.getDefinition("take", 10);
+//        List<PhrasalVerb> phrasalVerbs = merriamService.getPhrasalVerbs("taken", 10);
+        List<SimpleWord> simpleWords = merriamService.getDefinition("taken", 10);
 
         System.out.println(simpleWords.size());
-        System.out.println(phrasalVerbs.size());
+//        System.out.println(phrasalVerbs.size());
     }
 }

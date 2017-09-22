@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 
-@Component
 public class SimpleWord extends Word {
 
     private String partOfSpeach;
-
+    private String transcription;
 
     public SimpleWord(String id, Map<String, List<String>> definitionsAndExamples) {
 
@@ -18,7 +17,9 @@ public class SimpleWord extends Word {
         this.definitionsAndExamples = definitionsAndExamples;
 
     }
-
+    public String getTranscription() {
+        return transcription;
+    }
 
     public void setTranscription(String transcription) {
         this.transcription = transcription;
@@ -34,5 +35,9 @@ public class SimpleWord extends Word {
 
     public void setPartOfSpeach(String partOfSpeach) {
         this.partOfSpeach = partOfSpeach;
+    }
+
+    public String getPartOfSpeach() {
+        return partOfSpeach;
     }
 }
