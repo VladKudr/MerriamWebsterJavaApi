@@ -32,9 +32,12 @@ The "MerriamService" class is a classic one way service class to obtain definiti
         public class App{
             public static void main (String [] args){
                 //Initialize key
-                MerriamService dictionaryService = new MerriamService("4d0a2da0-791e-4616-986f-2b26da530f04");
+                MerriamService dictionaryService = new MerriamService("API_KEY");
 
-                EntryList entries = dictionaryService.explainTheWord("apple");
+                List<PhrasalVerb> phrasalVerbs = merriamService.getPhrasalVerbs("WORD", 10);
+                List<SimpleWord> simpleWords = merriamService.getDefinition("WORD", 10);
+                ComplexWord complexWord = new ComplexWord(phrasalVerbs,simpleWords );
+
                 //some activities
                 //....
             }

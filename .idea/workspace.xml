@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36f7341a-3d97-4bc4-9a8d-8211bd1584a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/config/DbConfiguration.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/apple.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/apple.xsd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/go.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/go.xsd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/plain.xtd" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MerriamWebsterJavaApi.iml" afterPath="$PROJECT_DIR$/MerriamWebsterJavaApi.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/ComplexWord.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/ComplexWord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/PhrasalVerb.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/PhrasalVerb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/SimpleWord.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/SimpleWord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/Word.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/objects/Word.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/service/MerriamService.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/service/MerriamService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java" afterPath="$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java" />
     </list>
     <ignored path="MerriamWebsterJavaApi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,6 +21,29 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/README.md">
+                <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                  <state split_layout="SPLIT">
+                    <first_editor relative-caret-position="1166">
+                      <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+                      <folding />
+                    </first_editor>
+                    <second_editor />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="MerriamWebsterJavaApi" />
   </component>
@@ -44,8 +52,8 @@
       <file leaf-file-name="MerriamService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/service/MerriamService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="396">
+              <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#explainTheWord#0;class#MerriamService#0" expanded="false" />
@@ -64,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="55" column="61" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="61" />
+            <state relative-caret-position="363">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordsDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordsDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,16 +159,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebClientAutoConfiguration.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.5.RELEASE/spring-boot-autoconfigure-1.5.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebClientAutoConfiguration.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -203,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/resttemplate_try/Try.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/model/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/Try.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/model/Art.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/model/Definition.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/model/DefiningText.java" />
@@ -236,8 +233,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.5.RELEASE/spring-boot-1.5.5.RELEASE.jar!/org/springframework/boot/SpringApplication.class" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -793,12 +791,12 @@
       <workItem from="1506064663786" duration="4177000" />
       <workItem from="1506070785229" duration="130000" />
       <workItem from="1506071191727" duration="7132000" />
-      <workItem from="1506081300947" duration="10291000" />
+      <workItem from="1506081300947" duration="11495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112428000" />
+    <option name="totallyTimeSpent" value="113632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -824,7 +822,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810867" sideWeight="0.4871795" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3272727" sideWeight="0.4871795" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25297943" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -834,7 +832,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4342246" sideWeight="0.49687222" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4342246" sideWeight="0.49687222" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -892,7 +890,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java</url>
-          <line>55</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="123" />
         </line-breakpoint>
@@ -910,7 +908,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java</url>
-          <line>56</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
@@ -965,13 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1238,10 +1229,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="55" column="61" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="61" />
+        <state relative-caret-position="418">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1250,8 +1241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/service/MerriamService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="396">
+          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#explainTheWord#0;class#MerriamService#0" expanded="false" />
@@ -1259,13 +1250,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/db/WordsDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/merriam_api/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="363">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1166">
+            <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>

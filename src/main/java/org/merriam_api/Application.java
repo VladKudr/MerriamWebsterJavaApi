@@ -41,10 +41,7 @@ public class Application implements CommandLineRunner {
         final String authPassword = "secret";
 
 
-        System.setProperty("http.proxyHost", "msk-proxy.ftc.ru");
-        System.setProperty("http.proxyPort", "3128");
-//        System.setProperty("http.proxyUser", authUser);
-//        System.setProperty("http.proxyPassword", authPassword);
+
         MerriamService merriamService = new MerriamService("4d0a2da0-791e-4616-986f-2b26da530f04");
 //        merriamService.explainTheWord("taken");
 
